@@ -1,0 +1,103 @@
+/* 🌞 Light Mode */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to top, #90caf9, #e3f2fd);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #ffffffdd;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 400px;
+  color: #000;
+}
+
+input {
+  padding: 10px;
+  width: 90%;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px 15px;
+  background: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1976d2;
+}
+
+#weatherResult, #forecastResult {
+  margin-top: 20px;
+}
+
+.weather-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* 🌙 Dark Mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(to bottom, #0d47a1, #1a237e);
+    color: white;
+  }
+
+  .container {
+    background: #1e1e2fdd;
+    color: white;
+    box-shadow: 0 0 10px rgba(255,255,255,0.2);
+  }
+
+  input {
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+  }
+
+  button {
+    background: #42a5f5;
+  }
+
+  button:hover {
+    background: #2196f3;
+  }
+
+  footer {
+    color: #bbb;
+  }
+}
