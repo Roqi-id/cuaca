@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuaca Real-Time</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #001f3f;
+      color: white;
+      margin: 0;
+      padding: 20px;
+      transition: background 0.5s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .card {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      border-radius: 15px;
+      border: 2px solid #00d1ff;
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+    #pencarian {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    #inputKota {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      flex: 1;
+      min-width: 200px;
+    }
+    #btnCari {
+      padding: 10px 15px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      background: #00d1ff;
+      color: black;
+      cursor: pointer;
+    }
+    .temp {
+      font-size: 48px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .forecast {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .forecast-day {
+      background: rgba(255,255,255,0.1);
+      padding: 10px;
+      border-radius: 10px;
+      width: 90px;
+      text-align: center;
+    }
+    .forecast-day img {
+      width: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div id="pencarian">
+    <input type="text" id="inputKota" placeholder="Masukkan nama kota">
+    <button id="btnCari" onclick="cariCuaca()">Cari</button>
+  </div>
+
+  <div class="card">
+    <h2 id="lokasi">Mendeteksi lokasi...</h2>
+    <p id="tanggal">Loading tanggal...</p>
+    <img id="ikon" src="" alt="ikon cuaca" width="80" style="margin: 10px 0;">
+    <div class="temp" id="suhu">Loading suhu...</div>
+    <p id="cuaca">Loading cuaca...</p>
+    <p id="tambahan">Memuat detail...</p>
+    <div class="forecast" id="forecast"></div>
+  </div>
+
+  <script>
+    // (kode JavaScript tetap sama)
+  </script>
+</body>
+</html>
