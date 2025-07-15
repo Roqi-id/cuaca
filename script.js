@@ -1,4 +1,4 @@
-const apiKey = 'c08d81a4edb5e2f261d3bb518c40d939'; // Ganti dengan API key kamu
+const apiKey = 'API_KEY_ANDA'; // Ganti dengan API key kamu
 
 document.addEventListener("DOMContentLoaded", () => {
   const tanggal = new Date().toLocaleDateString('id-ID', {
